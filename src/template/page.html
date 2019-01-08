@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="Keywords" content="blog"/>
     <meta name="Description" content="blog"/>
-    <title>Simple</title>
+    <title>网上自留地</title>
     <link rel="shortcut icon" href="/static/favicon.png"/>
     <link rel="stylesheet" type="text/css" href="/main.css" />
+    <script src="http://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <!--Valine 的核心代码库:-->
+    <script src="http://unpkg.com/valine/dist/Valine.min.js"></script>
 </head>
 <body>
 <div class="main">
@@ -35,9 +38,20 @@
 </div>
 <br>
 <br>
-    <div id="disqus_thread"></div>
+    <div id="vcomments"></div>
+         <script>
+        new Valine({
+    el: '#vcomments' ,
+    appId: '9xv7BruNNkPofAy2j9xfjn4t-gzGzoHsz',
+    appKey: 'jBVz6ajeS91iHsCngQqsc5BA',
+    notify:false, 
+    verify:false, 
+    avatar:'mm', 
+    placeholder: 'ヾﾉ≧∀≦)o来评论下吧!' 
+});
+    </script>
 	<div class="footer">
-		<p>© Copyright 2014 by isnowfy, Designed by isnowfy</p>
+		<p>© Copyright 2016  Designed by <a href="/sweetly/src/">sweetly</a></p>
 	</div>
 </div>
 <script src="main.js"></script>
